@@ -1,9 +1,3 @@
-using CsvHelper;
-using CsvHelper.Configuration;
-using System.ComponentModel;
-using System.Data;
-using System.Globalization;
-
 namespace EmployeesProject
 {
     public partial class Form1 : Form
@@ -29,7 +23,7 @@ namespace EmployeesProject
             }
         }
 
-        
+
         static List<(EmployeeRecord, EmployeeRecord, int, int)> CalculateOverlappingPeriods(List<EmployeeRecord> records)
         {
             var overlappingPeriods = new List<(EmployeeRecord, EmployeeRecord, int, int)>();
